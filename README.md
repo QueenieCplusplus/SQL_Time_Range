@@ -24,3 +24,11 @@ beseDate 起始日期
 
 = 82800 + 3540 + 59 = 86399
 
+
+select * from log_guild_member_gold where EventTime between CURRENT_DATE() and DATEADD(SECOND, 86399, CURRENT_DATE());
+
+SELECT CURRENT_DATE(); --   2009-06-08
+SELECT CURRENT_DATE() + 1; --   2009-06-09
+select date_format(CURRENT_DATE(), '%Y-%M-%D'); -- 2020-June-8th
+select date_format(CURRENT_DATE(), '%Y-%m-%d 00:00:00'); -- 2020-06-08
+
