@@ -6,7 +6,8 @@
 所以精確的不寫死寫法是
 
 MaxTime = theDate.AddDays(1).AddSeconds(-1);
-MinTime = theDat
+
+MinTime = theDate 時間歸零;
 
 select * from table_name between MinTime and MaxTime;
 
